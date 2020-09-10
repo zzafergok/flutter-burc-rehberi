@@ -7,6 +7,7 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
     return MaterialApp(
       title: "Burç Rehberi",
       debugShowCheckedModeBanner: false,
@@ -14,10 +15,18 @@ class MyApp extends StatelessWidget {
       initialRoute: "/burcListesi",
 
       routes: {
-        "/": (context) => BurcListe(),
-        "/burcListesi": (context) => BurcListe(),
-        "/burcDetay/$index": (context) => BurcDetay()
+        "/" : (context) => BurcListe(),
+        "/burcListesi" : (context) => BurcListe(),
       },
+
+      onGenerateRoute: (RouteSettings settings){
+        List<String> pathElemanlari = settings.name.split("/"); //  /  burcDetay  /    1
+        if(pathElemanlari[1] == 'burcDetay'){
+          return MaterialPageRoute(builder: (context) => BurcDetay(int.parse(pathElemanlari[2])));
+        }
+        return null;
+      },
+
       theme: ThemeData(
         primarySwatch: Colors.orange
       ),

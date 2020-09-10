@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_burc_rehberi/burc_detay.dart';
 import 'package:flutter_burc_rehberi/models/burc.dart';
 import 'package:flutter_burc_rehberi/utils/strings.dart';
 
 class BurcListe extends StatelessWidget {
-  List<Burc> tumBurclar;
+  static List<Burc> tumBurclar;
 
   @override
   Widget build(BuildContext context) {
     tumBurclar = veriKaynaginiHazirla();
+
     return Scaffold(
       appBar: AppBar(
         title: Text("Burç Rehberi"),
@@ -56,7 +56,7 @@ class BurcListe extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: ListTile(
-          onTap: ()=> Navigator.pushNamed(context, "burcDetay/$index"),
+          onTap: ()=> Navigator.pushNamed(context, "/burcDetay/$index"),
           //onTap: ()=>Navigator.push(context, MaterialPageRoute(builder: (context) => BurcDetay())),
           leading: Image.asset(
             "images/" + oanListeyeEklenenBurc.burcKucukResim,
