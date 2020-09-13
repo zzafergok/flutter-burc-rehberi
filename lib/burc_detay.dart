@@ -54,9 +54,9 @@ class _BurcDetayState extends State<BurcDetay> {
                   fit: BoxFit.cover),
               centerTitle: true,
               title: Text(
-                secilenBurc.burcAdi + " Burcu ve Özellikleri",
-                style: TextStyle(color: Colors.white),
-              ),
+              secilenBurc.burcAdi + " Burcu ve Özellikleri",
+              style: TextStyle(color: Colors.white),
+            ),
             ),
           ),
           SliverToBoxAdapter(
