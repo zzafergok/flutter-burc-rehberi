@@ -65,7 +65,6 @@ class Strings {
         "\tBurcunuzdan olan ünlüler:  Nükhet Duru, Öztürk Serengil, Salvadore Dali, Karl Marks, Lenin, Sigmund Freud, Shakespare\n\n",
 
     "\tGenel Özellikler\n\n"
-
         "\tYönetici yıldızınız: Merkür\n\n"
         "\tGrubunuz: Hava\n\n"
         "\tUğurlu gününüz: Çarşamba\n\n"
@@ -180,7 +179,6 @@ class Strings {
         "\tBurcunuzdan olan ünlüler:  Mehmet Ali Birand, Zeki Müren, Walt Disney, Winston Churchill, Ludwig van Beethoven, Mark Twain\n\n",
 
     "\tGenel Özellikler\n\n"
-
         "\t Yönetici yıldızınız: Satürn\n\n"
         "\t Grubunuz: Toprak\n\n"
         "\t Uğurlu gününüz: Cumartesi\n\n"
@@ -199,10 +197,9 @@ class Strings {
 
 
     "\tGenel Özellikler\n\n"
-
-        "\tYönetici yıldızınız: Uranüs\n\n"
+        "\t Yönetici yıldızınız: Uranüs\n\n"
         "\t Grubunuz: Hava\n\n"
-        "\tUğurlu gününüz: Pazar\n\n"
+        "\t Uğurlu gününüz: Pazar\n\n"
         "\t Uğurlu sayınız: 4\n\n"
         "\t Uğurlu renginiz: Lacivert\n\n"
         "\t Uğurlu taşlarınız: Ametist, Gümüş, Grena\n\n"
@@ -218,7 +215,6 @@ class Strings {
 
 
     "\tGenel Özellikler\n\n"
-
         "\t Yönetici yıldızınız: Neptün\n\n"
         "\t Grubunuz: Su\n\n"
         "\t Uğurlu gününüz: Perşembe\n\n"

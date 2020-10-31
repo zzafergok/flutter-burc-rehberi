@@ -5,7 +5,11 @@ class Burc {
   String _burcKucukResim;
   String _burcBuyukResim;
 
-  Burc(this._burcAdi, this._burcTarihi, this._burcDetay, this._burcKucukResim,
+  Burc(
+      this._burcAdi,
+      this._burcTarihi,
+      this._burcDetay,
+      this._burcKucukResim,
       this._burcBuyukResim);
 
   String get burcBuyukResim => _burcBuyukResim;

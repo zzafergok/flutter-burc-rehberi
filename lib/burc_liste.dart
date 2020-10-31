@@ -23,9 +23,8 @@ class BurcListe extends StatelessWidget {
     for (int i = 0; i < 12; i++) {
       String kucukResim =
           Strings.BURC_ADLARI[i].toLowerCase() + "${i + 1}.png"; //Koc->koc1.png
-      String buyukResim = Strings.BURC_ADLARI[i].toLowerCase() +
-          "_buyuk" +
-          "${i + 1}.png"; //Koc->koc_buyuk1.png
+      String buyukResim =
+          Strings.BURC_ADLARI[i].toLowerCase() + "_buyuk" + "${i + 1}.png"; //Koc->koc_buyuk1.png
 
       Burc eklenecekBurc = Burc(
           Strings.BURC_ADLARI[i],
@@ -35,7 +34,6 @@ class BurcListe extends StatelessWidget {
           buyukResim);
       burclar.add(eklenecekBurc);
     }
-
     return burclar;
   }
 
@@ -56,7 +54,7 @@ class BurcListe extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: ListTile(
-          onTap: ()=> Navigator.pushNamed(context, "/burcDetay/$index"),
+          onTap: () => Navigator.pushNamed(context, "/burcDetay/$index"),
           //onTap: ()=>Navigator.push(context, MaterialPageRoute(builder: (context) => BurcDetay())),
           leading: Image.asset(
             "images/" + oanListeyeEklenenBurc.burcKucukResim,
